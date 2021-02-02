@@ -11,7 +11,7 @@ const SPEED: u64 = 250;
 fn main() {
     let mut rng = rand::thread_rng();
     let mut board = [[DEAD; 40]; 40];
-    for _ in 0..500 {
+    for _ in 0..800 {
         let x = rng.gen_range(0..40);
         let y = rng.gen_range(0..40);
         board[x][y] = ALIVE;
